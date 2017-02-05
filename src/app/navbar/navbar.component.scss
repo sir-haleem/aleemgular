@@ -1,0 +1,12 @@
+button.btn {
+    border: 1.5px solid whitesmoke !important;
+
+    &:first-of-type {
+        margin-right: 15px;
+    }
+    
+}
+
+.nav.visible-xs {
+    margin-right: 15px;
+}

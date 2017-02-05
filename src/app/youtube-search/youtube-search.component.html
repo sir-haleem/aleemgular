@@ -1,0 +1,24 @@
+<div class='container'>
+      <div class="page-header">
+        <h1>YouTube Search
+          <i *ngIf="loading" class="glyphicon glyphicon-time"></i>
+        </h1>
+      </div>
+
+      <div class="row">
+        <div class="input-group input-group-lg col-md-12">
+          <forum-search-box
+             (loading)="loading = $event"
+             (results)="updateResults($event)"
+          >
+          </forum-search-box>
+        </div>
+      </div>
+
+      <div class="row">
+        <forum-search-results
+          *ngFor="let result of results"
+          [result]="result">
+        </forum-search-results>
+      </div>
+  </div>

@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+
+<forum-navbar [isSignedIn] = "user.isSignedIn"></forum-navbar>
+
+<main class="container">
+  <div class="row">
+    <forum-ads [adsUrl]="ads[0].url" [imgUrl]="ads[0].imgUrl"></forum-ads>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <!--<forum-youtube-search></forum-youtube-search>-->
+    </div>
+    
+  </div>
+</main>
+<!--<forum-login style="background: #083c5d; color: #fff;"></forum-login>-->
+<!--<forum-login style="background: #0070FF;  color: whitesmoke	"></forum-login>
+<forum-login style="background: #80B7FF		"></forum-login>-->
+
+<forum-footer class="row"></forum-footer>

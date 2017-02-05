@@ -1,0 +1,7 @@
+<h2>Basic Request</h2>
+<button type="button" (click)="makeRequest()">Make Request</button>
+<div *ngIf="loading">
+    <i class="glyphicon glyphicon-ok-circle"></i>
+    <i class="glyphicon glyphicon-ok-circle"></i>
+</div>
+<pre *ngIf="data">{{data | json}}</pre>

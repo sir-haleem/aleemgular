@@ -1,0 +1,22 @@
+div.col-xs-12 {
+    background: #059fe8;
+    color: whitesmoke;
+    border-top-color: rgb(4, 137, 199);
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 10px 15px;
+    a {
+        color: lighten(#000, 33.7%);
+        margin: 5px;
+
+        &:hover{
+            color: lighten(#000, 46.7%);
+        }
+        &:first-of-type{
+            margin-left: 2.5px;
+        }
+        &:last-of-type {
+            margin-left: 0px;
+        }
+    }
+}
